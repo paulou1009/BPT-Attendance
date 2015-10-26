@@ -20,6 +20,24 @@ public class AccountDAO {
 
     private String employeeName;
 
+    private Boolean isCheckin;
+
+    public Boolean getIsCheckin() {
+        return isCheckin;
+    }
+
+    public void setIsCheckin(Boolean isCheckin) {
+        this.isCheckin = isCheckin;
+    }
+
+    public Set<AttendanceDAO> getAttendanceDAO() {
+        return attendanceDAO;
+    }
+
+    public void setAttendanceDAO(Set<AttendanceDAO> attendanceDAO) {
+        this.attendanceDAO = attendanceDAO;
+    }
+
     @ManyToOne
     @JoinColumn(name="company_id")
     private CompanyDAO companyDAO;
@@ -37,6 +55,7 @@ public class AccountDAO {
         this.salt = salt;
         this.employeeName = employeeName;
         this.companyDAO = companyDAO;
+        this.isCheckin = false;
     }
 
     public long getId() {

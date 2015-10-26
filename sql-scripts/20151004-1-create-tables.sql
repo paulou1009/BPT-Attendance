@@ -14,7 +14,8 @@ CREATE TABLE `accounts` (
   `salt` varchar(255) DEFAULT NULL,
   `company_id` int(11) unsigned DEFAULT NULL,
   `employee_name` varchar(255) DEFAULT NULL,
+  `is_checkin` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `company_id` (`company_id`),
   CONSTRAINT `accounts_ibfk_1` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;

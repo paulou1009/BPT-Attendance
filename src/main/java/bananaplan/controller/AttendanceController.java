@@ -22,9 +22,9 @@ public class AttendanceController {
         attendanceService.checkIn(userId);
     }
 
-    @RequestMapping(value = "/attendance/checkOut/{userId}", method = RequestMethod.PUT)
-    public void checkOut(@PathVariable Long userId){
-        attendanceService.checkOut(userId);
+    @RequestMapping(value = "/attendance/checkOut/{attendanceId}", method = RequestMethod.PUT)
+    public void checkOut(@PathVariable Long attendanceId){
+        attendanceService.checkOut(attendanceId);
     }
 
 }

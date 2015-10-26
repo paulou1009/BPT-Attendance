@@ -53,4 +53,6 @@ public class AccountService {
     public AccountDAO getById(Long userId){
         return accountRepository.findById(userId);
     }
+
+    public void saveAccount(AccountDAO accountDAO){ accountRepository.save(accountDAO);}
 }
