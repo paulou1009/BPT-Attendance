@@ -8,6 +8,16 @@ Preparation Step:
     1. Install Mysql
     2. Execute scripts in sql-scripts folder
 
+Import Project Into Intellij:
+    1. git clone the project
+    2. Open Intellij
+    3. Choose "Import from existing code"
+    4. Choose "Import from external model" -> "Gradle"
+    5. Check "Use default gradle wrapper (recommended)"
+    6. Check "auto import"
+    7. Open Gradle Tool: "Tool Windows" -> "Gradle"
+    8. Refresh dependencies by clicking recycle icon 
+
 
 Endpoint:
 
